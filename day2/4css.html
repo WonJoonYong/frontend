@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Day2_css 두번째</title>
+    <style>
+        /* 블록요소의 선 굵기와모양, 내부/외부 여백
+           블록요소의 스타일을 이용해서 웹페이지의 레이아웃을 만듭니다.
+           블록요소의 기본 너비는 ? 브라우저의 너비, 기본높이는? 컨텐츠 내용만큼.
+         */
+        ul{
+            /* 선 모양은 border-top-style, 선굵기 border-top-width + 선색상 border-위치-color*/
+            border-top :1px dotted blue;
+            border-right: 1px double;
+            border-bottom: 1px dashed;
+            border-left: 1px solid; /* 선 모양 : solid 실선, double 이중선 , dotted 점선 , dashed*/
+           
+            /* padding 은 블럭요소의 여백 */
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px; /* li 태그에 적용된 여백이 있어서 확인 안되는 중*/
+            
+            /* margin은 블럭요소의 외부 여백 */
+            margin-top: 40px;
+            margin-right: 60px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+        }
+        li{
+            margin: 20px 40px;
+        }
+        p{
+            /* 위-오른-아래-왼쪽 선 모두 적용. */
+            border: 2px dashed tomato;
+            /* 시계방향으로 설정 . 공통값일 떄는 한 번만 */
+            padding : 20px;
+            margin: 40px 60px 50px 50px;
+            width: 400px;
+        }
+        h3{
+            border: 1px solid;
+            border-color: blue blueviolet brown chartreuse;
+            /* border-width: ; 시계방향으로 설정
+            border-style: ; 시계방향으로 설정 */
+            /* 첫번째 값 20px 는 위, 아래 두번째 값 60px 은 왼,오른쪽 */
+            padding : 20px 60px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h3>Css 란?</h3>
+    <p>
+        css는 html 문서의 스타일을 지정하는데 사용하는 언어입니다 css는 html 요소가 어떻게 표시되어야하는지 설명함.
+    </p>
+    <ul>
+        <!-- 1) style 속성으로 css 사용 , 태그와 속성이 충돌되는 값일때는 속성이 최종.-->
+        <li>css 는 Casacading Style Sheets 의 약자입니다.</li>
+        <li>css 작성은 태그에서 style 속성을 사용하거나 또는 style 태그에 작성함.</li>
+        <li>style 태그에서는 특정 요소에 적용할 선택자(selector)가 필요합니다. 참고로
+            style 태그는 head 안에 작성함.
+        </li>
+        <li>Css 는 파일로 작성해서 여러 웹페이지(html파일) 에 적용되게 할 수 있습니다.</li>
+        <li>Css 를 저장하는 파일 확장자는 . css입니다.</li>
+        <li>css 프로퍼티는 글꼴 크기, 색상, 배경이미지, 테두리 등등이 있습니다. 모든 태그에 공통적인것
+            또는 특정태그에만 적용되는 것을 구별해서 사용합니다.</li>
+
+
+
+    </ul>
+</body>
+</html>
