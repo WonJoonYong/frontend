@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day4_iframe</title>
+    <style>
+        iframe{
+            width: 90%;
+            height: 600px;
+
+        }
+    </style>
+</head>
+<body>
+    <!-- iframe 은 inline frame : 현재 문서에 다른 문서를 포함.
+    포함시킬 문서의 url(http주소, 파일명)은 src속성으로 설정
+    -->
+
+    <h4>13form.html문서 담기</h4>
+    <!-- root 경로 바로 아래에 있는 폴더 day3 지정 
+    파일열기로 했을떄는 동작 안함.
+    -->
+    <iframe src="/day3/13form.html" frameborder="0"></iframe>
+    <!-- 한 단계 상위폴더 이동후 day3 폴더지정 -->
+    <iframe src="../day3/13form.html" frameborder="0"></iframe>
+    <h4>공유링크 퍼오기</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25319.01333710063!2d127.02928804288698!3d37.51082691543633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40797edc717%3A0xe33c0e22646edf36!2z7Iug65287Iqk7YWM7J20IOyXreyCvA!5e0!3m2!1sko!2skr!4v1658364762786!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pteVUMQ01FQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h4>url 직접 지정</h4>
+    <!-- 대부분 주요 서비스 url은 보안상 위협이 될 수 있기 떄문에 우리의 iframe 설정 요청을 거부함. -->
+    <iframe src="https://www.w3schools.com/default.asp" frameborder="0"></iframe>
+    <iframe src="https://itgn.cafe24.com/" frameborder="0"></iframe>
+</body>
+</html>
